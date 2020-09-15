@@ -210,6 +210,11 @@ https://www.coingecko.com/api/docs/v3
     ```python
     cg.get_global()
     ```
+- *trending*
+  - **/search/trending** (Get trending searchs)
+    ```python
+    cg.get_trending()
+    ```
 
 ### Test
 
