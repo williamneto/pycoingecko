@@ -391,6 +391,14 @@ class CoinGeckoAPI:
         api_url = self.__api_url_params(api_url, kwargs)
 
         return self.__request(api_url)['data']
+    
+    # --------- DeFi -------------- #
+    def get_defi(self, **kwargs):
+        """ Get DeFi data """
+        api_url = '{0}global/decentralized_finance_defi'.format(self.api_base_url)
+        api_url = self.__api_url_params(api_url, kwargs)
+
+        return self.__request(api_url)
 
     # ---------- TRENDING ----------#
     def get_trending(self, **kwargs):
@@ -398,3 +406,4 @@ class CoinGeckoAPI:
         api_url = self.__api_url_params(api_url, kwargs)
 
         return self.__request(api_url)
+    
